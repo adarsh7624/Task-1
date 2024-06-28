@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(75deg,rgb(31, 106, 94),rgb(23, 23, 83));
+    padding: 3rem;
+}
+.todo{
+    width: 40%;
+    height:40vh;
+    background: #fff;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 1rem;
+
+}
+.todo h1{
+    color: rgb(195, 37, 37);
+   
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeef0;
+    border-radius: 3rem;
+    padding-left: 2rem;
+    margin-bottom: 1.5rem;
+}
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 1rem;
+    font-weight: 14px;
+}
+button{
+    border: none;
+    outline: none;
+    padding: 1rem 3rem;
+    background: #ff5945;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 2rem;
+}
+ul li{
+    list-style: none;
+    font-size: 17px;
+   padding: 1px 12px 10px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+
+}
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    border: 1px solid grey;
+   
+    background-size: cover;
+    background-position: center;
+    top: 4px;
+    left: 20px;
+}
+ul li.check{
+    color: #555;
+    text-decoration: line-through;
+}
+ul li.check::before{
+    background-image: url(adarsh.jpg);
+}
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 0px;
+    bottom: 1px;
+    width: 40px;
+    height: 40px;
+    font-size: 25px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+ul li span:hover{
+    background: #edeef0;
+}
